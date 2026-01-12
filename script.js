@@ -580,10 +580,10 @@ const rot=quatToMatrix(camQuat);
 const fwd=normalize([-rot[8],-rot[9],-rot[10]]);
 const right=normalize([rot[0],rot[1],rot[2]]);
 const up=normalize([rot[4],rot[5],rot[6]]);
-if(keys['arrowup'])camQuat=quatRotate(camQuat,right,+turn);
-if(keys['arrowdown'])camQuat=quatRotate(camQuat,right,-turn);
-if(keys['arrowleft'])camQuat=quatRotate(camQuat,up,+turn);
-if(keys['arrowright'])camQuat=quatRotate(camQuat,up,-turn);
+if(keys['7'])camQuat=quatRotate(camQuat,right,+turn);
+if(keys['8'])camQuat=quatRotate(camQuat,right,-turn);
+if(keys['y'])camQuat=quatRotate(camQuat,up,+turn);
+if(keys['i'])camQuat=quatRotate(camQuat,up,-turn);
 if(keys['z'])camQuat=quatRotate(camQuat,fwd,-turn);
 if(keys['c'])camQuat=quatRotate(camQuat,fwd,+turn);
 if(keys['w'])camPos=add(camPos,mul(fwd,speed));
@@ -1742,3 +1742,4 @@ mobField[i][j][1] -= strength * dt;}}}}; loop(0);
 
 
 }
+
