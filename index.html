@@ -7,10 +7,8 @@
 </head>
 <body>
 
-
  <!--Insert JSfiddle HTML here-->
  <!--Wrap JSfiddle in window.onload=function(){JS}-->
-
 
 <h1>STE(A)M Game Bengine Demo</h1>
 <h2> Purpose and Key Takeaways </h2>
@@ -30,14 +28,12 @@
  <h2>Keyboard Controls</h2>
  <table>
 <tr><th>Key</th><th>Action</th></tr>
-<tr><td>W</td><td>Camera Forward</td></tr>
-<tr><td>A</td><td>Camera Left </td></tr>
-<tr><td>S</td><td>Camera Backward</td></tr>
-<tr><td>D</td><td>Camera Right</td></tr>
-<tr><td>X</td><td>Camera Up</td></tr>
-<tr><td>shiftkey</td><td>Camera Down</td></tr>
-<tr><td>Z</td><td>Camera Roll Counterclockwise</td></tr>   
-<tr><td>C</td><td>Camera Roll Clockwise</td></tr>   
+<tr><td>W/S</td><td>Camera Strafe Forward/Backward</td></tr>
+<tr><td>A/D</td><td>Camera Strafe Left/Right</td></tr>
+<tr><td>X/shiftkey</td><td>Camera Elevate/Descend</td></tr>
+<tr><td>7/8</td><td>Point Camera Oriention Up/Down </td></tr>
+<tr><td>y/i</td><td>Point Camera Oriention Left/Right </td></tr>
+<tr><td>Z/C</td><td>Camera Roll Counterclockwise/Clockwise</td></tr>   
 <tr><td>R</td><td>Reset Environment</td></tr>   
 <tr><td>Q</td><td>Quit/Reset Simulation</td></tr>
 <tr><td>E</td><td>Edges of Surface Mesh Toggle</td></tr>
@@ -47,21 +43,15 @@
 <tr><td>O</td><td>Opacity of Liquid Toggle</td></tr>
 <tr><td>P</td><td>Planet below Liquid Toggle</td></tr>
 <tr><td>B</td><td>Blast Spacehip's Rocket Propulsion System</td></tr>
-<tr><td>U</td><td>Point Spaceship Orientation Up</td></tr>
-<tr><td>H</td><td>Point Spaceship Orientation Left</td></tr>
-<tr><td>J</td><td>Point Spaceship Orientation Down</td></tr>
-<tr><td>K</td><td>Point Spaceship Orientation Right</td></tr>
-<tr><td>N</td><td>Roll Spaceship Counterclockwise</td></tr>
+<tr><td>U/J</td><td>Cockpit Pilot: Point Spaceship Orientation Up/Down</td></tr>
+<tr><td>H/K</td><td>Cockpit Pilot: Point Spaceship Orientation Left/Right</td></tr>
+<tr><td>N/comma ,</td><td>Cockpit Pilot: Roll Spaceship Counterclockwise/Clockwise</td></tr>
 <tr><td>M</td><td>Mount Camera upon Spaceship Toggle</td></tr>
-<tr><td>comma ,</td><td>Roll Spaceship Clockwise</td></tr>
-<tr><td>L</td><td>Point Camera and Spaceship toward Center</td></tr>
+<tr><td>L</td><td>Look at Center: Point Camera + Spaceship toward origin</td></tr>
 <tr><td>V</td><td>Volley Basketball Asteroid to Hoop</td></tr>
  </table>
 </div>
 </div>
-
-
-
 
 <div id="description">
 <h1>About Simulation</h1>
@@ -94,9 +84,6 @@
  <li> Turning on/off gravitation field affects the spaceship, basketball asteroid, and the laser cannon projectile's orbit. </li>
 </ul>
 
-
-
-
 <h1>Potential Future Directions </h1>
 <h2> Fun Related Spinoffs: </h2>
 <ul>
@@ -106,14 +93,9 @@
 <li> Multiplayer 3D Spaceship Soccer Rugby “Rocket League of Legends” </li> 
 </ul>
 
-
-
-
 <h2> Practical Scientific Application: </h2>
 
-
 (This demo is not intended to replace domain-specific simulation packages, but to illustrate how lightweight real-time interactive visualization and reduced-order physics models can complement traditional offline solvers.)
-
 
 <h3> Fast, lean, streamlined, easy-to-use, generalizeable, and globally available live 3D dynamic display protocol: </h3>
 For the purposes of scientific research simulation diagnostic analysis, conveniently accessed rapidfire "peek-under-the-hood"-type "periscope viewport" examination tool to inspect multiresolution details within:
@@ -125,9 +107,6 @@ For the purposes of scientific research simulation diagnostic analysis, convenie
 <li> Electromagnetism computations, particularly for CAD of semiconductor and optical devices for their associated behavioral properties </li>
 <li> Data visualization, particularly for meaningfully extending 2D methods such as t-distributed stochastic neighbor embedding or SVD PCA to 3D interpretive viewing, and for voxel reconstruction, often from filtered backprojection computed tomography (CT scans), optical coherence tomography (OCT), or nuclear magnetic resonance imaging (biomedical MRI). </li>
 </ul>
-
-
-
 
 <h3> Efficient original live-simulation physics PDE protocol: </h3>
 <p>
@@ -147,9 +126,6 @@ In conclusion, this all delineates the core essence behind the coined term “Be
 </p>
 </div>
 
-
  <script src="script.js"></script>
 </body>
-
 </html>
-
