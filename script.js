@@ -590,7 +590,7 @@ if(keys['w'])camPos=add(camPos,mul(fwd,speed));
 if(keys['s'])camPos=add(camPos,mul(fwd,-speed));
 if(keys['a'])camPos=add(camPos,mul(right,-speed));
 if(keys['d'])camPos=add(camPos,mul(right,+speed));
-if(keys[' '])camPos=add(camPos,mul(up,speed));
+if(keys['x'])camPos=add(camPos,mul(up,speed));
 if(keys['shift'])camPos=add(camPos,mul(up,-speed));
 // -----------------------------------------------------------------------------
 // Bounding box constraint for free-floating camera
@@ -1738,6 +1738,7 @@ const pmob = [vxmob, vymob, vzmob];
 const dmob = Math.hypot(pmob[0]-asteroidPos[0], pmob[1]-asteroidPos[1], pmob[2]-asteroidPos[2]);
 if (dmob < cutoffmob) {const strength = (1 - dmob / cutoffmob) * 1 * attractionmob;
 mobField[i][j][1] -= strength * dt;}}}}; loop(0);
+
 
 
 }
