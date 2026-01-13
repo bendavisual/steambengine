@@ -554,7 +554,7 @@ let flameCurrentHeight = flameTipHeightIdle;
 const fov=degToRad(45),aspect=canvas.width/canvas.height;
 gl.uniformMatrix4fv(uProj,false,new Float32Array(perspective(fov,aspect,0.1,100)));
 let camQuat=vec2quat([-1,-1,-1]),camPos=[5,5,5];
-const speed=0.1,turn=degToRad(2);
+const speed=0.5,turn=degToRad(2);
 function updateCamera(){
 if (cameraMounted) {
 // placeholder: temporarily freeze camera when mounted
@@ -1742,6 +1742,7 @@ mobField[i][j][1] -= strength * dt;}}}}; loop(0);
 
 
 }
+
 
 
 
