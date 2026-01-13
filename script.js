@@ -506,7 +506,7 @@ drawScene();}
 let shipPos = [2.5, 2.5, 2.5];
 let shipVel = [0, 0, 0];        // current velocity
 let shipQuat = vec2quat([0, 0, 1]);    // orientation quaternion
-const shipTurnSpeed = degToRad(0.85);
+const shipTurnSpeed = degToRad(1.0);
 const shipThrust = 0.5;
 // -----------------------------------------------------------------------------
 // Spaceship Geometry (simple tetrahedron-ish)
@@ -1742,5 +1742,6 @@ mobField[i][j][1] -= strength * dt;}}}}; loop(0);
 
 
 }
+
 
 
